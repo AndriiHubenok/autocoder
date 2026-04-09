@@ -14,6 +14,9 @@ jobs:
   access_issue_info:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
       - name: Print Issue Information
         run: |
             echo "Issue Number: ${ISSUE_NUMBER}"
@@ -21,8 +24,7 @@ jobs:
             echo "Issue Body: ${ISSUE_BODY}"
             echo "Issue Assignees: ${ISSUE_ASSIGNEES}"
             echo "Issue Labels: ${ISSUE_LABELS}"
-      # - name: Checkout Code
-      #   uses: actions/checkout@v4
+
         
       # - name: Greeting Message
       #   run: echo "Hello, world"
