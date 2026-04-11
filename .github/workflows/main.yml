@@ -18,7 +18,7 @@ jobs:
       - name: Make script executable
         run: chmod +x ./scripts/script.sh
         
-      - name: Generate Code with ChatGPT
+      - name: Run interaction script
         id: generate_code
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
