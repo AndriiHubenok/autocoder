@@ -42,7 +42,7 @@ runs:
       run: chmod +x ${{ github.action_path }}/${{ inputs.SCRIPT_PATH }}
       shell: bash
 
-    - name: Run interaction script
+    - name: Generate Code from Issue using ChatGPT
       id: generate_code
       env:
         GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
