@@ -1,0 +1,1 @@
+To use the weather analyzer tool, simply call the analyze_data(file_path) function in the weather_analyzer.py script with the path to your CSV file as an argument. Make sure the CSV file has a column named 'Temperature'. The tool will output the mean, median, and standard deviation of the temperature data, as well as save a line plot of the data in a file named 'trends.png'.
