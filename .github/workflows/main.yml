@@ -12,6 +12,6 @@ jobs:
       - name: AutoCoder Composite Action
         uses: AndriiHubenok/autocoder-action@v1
         with:
-          github_token: $\{{ secrets.GITHUB_TOKEN }}
-          openai_api_key: $\{{ secrets.OPENAI_API_KEY }}
-          issue_label: 'autocoder'
+          GITHUB_TOKEN: $\{{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: $\{{ secrets.OPENAI_API_KEY }}
+          LABEL: 'autocoder'
